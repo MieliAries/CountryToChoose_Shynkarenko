@@ -1,11 +1,10 @@
-const { Table } = require('cli-table');
 const {MongoClient} = require('mongodb');
 const fs = require('fs');
 
 const uri = "mongodb+srv://Mieli:passwordformieli@countrytochoose.xvivhiq.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri);
 
-
+SaveCountries();
 async function SaveCountries(){
     try {
         await client.connect();

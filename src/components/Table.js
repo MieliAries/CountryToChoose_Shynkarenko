@@ -6,7 +6,7 @@ const Table = ({ Countries }) => {
         <table style ={{textAlign: 'center', padding: "15px"}}>
             <thead>
             <tr>
-                <th>Country Name</th>
+                <th>Сountry name</th>
                 <th>Climate</th>
                 <th>Economics</th>
                 <th>Energy</th>

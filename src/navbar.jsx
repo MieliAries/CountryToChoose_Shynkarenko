@@ -1,5 +1,6 @@
 import React from "react";
 import {Bars, Nav, NavLink, NavMenu} from "./NavbarElements";
+import countryLogo from "./images/countryLogo.png";
 
 function Navbar() {
     return (
@@ -7,23 +8,27 @@ function Navbar() {
             <Nav className='NavBar'>
                 <Bars />
 
+
                 <NavMenu>
-                    <NavLink to='/Home' activeStyle>
+                    <NavLink to='/Home'>
                         Home
                     </NavLink>
-                    <NavLink to='/Countries' activeStyle>
+                    <NavLink to='/Countries'>
                         All Countries
                     </NavLink>
-                    <NavLink to='/Preferences' activeStyle>
+                    <NavLink to='/Preferences'>
                         Your Preferences
                     </NavLink>
-                    <NavLink to='/Profile' activeStyle>
-                        Profile
-                    </NavLink>
-                    <NavLink to='/Login' activeStyle>
+                    <NavLink to='/Login'>
                         Login
                     </NavLink>
+                    <NavLink to='/Profile'>
+                        Profile
+                    </NavLink>
                 </NavMenu>
+                <img src={countryLogo} alt="swedenflag" style ={{
+                    height: '50%',
+                marginRight: '40%'}}/>
             </Nav>
         </>
     );

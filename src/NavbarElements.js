@@ -6,9 +6,11 @@ export const Nav = styled.nav`
   background: #fffb04;
   height: 85px;
   display: flex;
-  justify-content: space-between;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row-reverse;
   z-index: 12;
+  padding-right: 100px;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
