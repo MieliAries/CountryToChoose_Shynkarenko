@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "6471a405fe7ae515b783f23c",
+    "Country_Name": "Україна",
+    "Climate": 2,
+    "Economics": 2,
+    "Energy": 6,
+    "Safety": 2,
+    "LifeCost": 9,
+    "LifeLvl": 1,
+    "Health": 2,
+    "CrimeRate": 6,
+    "Pollution": 2
+  },
+  {
+    "_id": "6471a405fe7ae515b783f23d",
+    "Country_Name": "Польща",
+    "Climate": 3,
+    "Economics": 8,
+    "Energy": 5,
+    "Safety": 7,
+    "LifeCost": 8,
+    "LifeLvl": 3,
+    "Health": 3,
+    "CrimeRate": 1,
+    "Pollution": 3
+  },
+  {
+    "_id": "6471a405fe7ae515b783f23e",
+    "Country_Name": "Угорщина",
+    "Climate": 5,
+    "Economics": 4,
+    "Energy": 4,
+    "Safety": 5,
+    "LifeCost": 8,
+    "LifeLvl": 3,
+    "Health": 2,
+    "CrimeRate": 1,
+    "Pollution": 4
+  },
+  {
+    "_id": "6471a405fe7ae515b783f23f",
+    "Country_Name": "Словаччина",
+    "Climate": 5,
+    "Economics": 3,
+    "Energy": 5,
+    "Safety": 7,
+    "LifeCost": 7,
+    "LifeLvl": 4,
+    "Health": 4,
+    "CrimeRate": 2,
+    "Pollution": 5
+  },
+  {
+    "_id": "6471a405fe7ae515b783f240",
+    "Country_Name": "Фінляндія",
+    "Climate": 1,
+    "Economics": 6,
+    "Energy": 8,
+    "Safety": 8,
+    "LifeCost": 3,
+    "LifeLvl": 8,
+    "Health": 8,
+    "CrimeRate": 2,
+    "Pollution": 9
+  },
+  {
+    "_id": "6471a405fe7ae515b783f241",
+    "Country_Name": "Португалія",
+    "Climate": 9,
+    "Economics": 5,
+    "Energy": 3,
+    "Safety": 6,
+    "LifeCost": 7,
+    "LifeLvl": 6,
+    "Health": 6,
+    "CrimeRate": 1,
+    "Pollution": 6
+  }
+]
