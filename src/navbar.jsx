@@ -7,8 +7,6 @@ function Navbar() {
         <>
             <Nav className='NavBar'>
                 <Bars />
-
-
                 <NavMenu>
                     <NavLink to='/Home'>
                         Home

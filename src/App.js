@@ -9,6 +9,7 @@ import NoPage from "./pages/NoPage";
 import React from "react";
 import Preferences from "./pages/Preferences";
 import Login from "./pages/Login";
+import NewPreferenceForm from "./forms/NewPreferenceForm";
 
 export default function App() {
     return(
@@ -21,6 +22,7 @@ export default function App() {
                 <Route path="preferences" element={<Preferences />} />
                 <Route path="profile" element={<Profile />} />
                 <Route path="login" element={<Login />} />
+                <Route path="/NewPreferenceForm" element={<NewPreferenceForm />} />
                 <Route path="*" element={<NoPage />} />
             </Route>
         </Routes>

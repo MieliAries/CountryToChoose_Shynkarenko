@@ -17,32 +17,14 @@ const Preferences = () => {
         >
             <h1 style={{textAlign: 'center'}}>Here you can see your preferences</h1>
             <PreferenceTable />
-            <div style={{flexDirection: 'row'}}>
-                <button type="submit" style={{
-                width: "20%",
-                backgroundColor: 'lightblue',
-                color: 'black',
-                border: 'none',
-                padding: '10px 20px',
-                marginLeft: '10%',
-                borderRadius: '4px'}}>Previous preference</button>
-                <button type="submit" style={{
+            <button type="submit" style={{
                     width: "20%",
                     backgroundColor: 'lightblue',
                     color: 'black',
                     border: 'none',
                     padding: '10px 20px',
-                    marginLeft: '10%',
+                    marginLeft: '40%',
                     borderRadius: '4px'}}>Create a new preference</button>
-                <button type="submit" style={{
-                    width: "20%",
-                    backgroundColor: 'lightblue',
-                    color: 'black',
-                    border: 'none',
-                    padding: '10px 20px',
-                    marginLeft: '10%',
-                    borderRadius: '4px'}}>Next preference</button>
-            </div>
         </div>
     );
 };
