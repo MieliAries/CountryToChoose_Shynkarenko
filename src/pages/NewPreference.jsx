@@ -1,14 +1,18 @@
 import React from 'react';
 import NewPreferenceForm from "../forms/NewPreferenceForm";
+import worldmap from "../images/worldmap.png";
 
 const NewPreference = () => {
     return (
-        <div
-            style={{
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'Left',
-                height: '100vh'
+        <div style={{
+            backgroundImage: `url(${worldmap})`,
+            backgroundPosition: 'center',
+            backgroundSize: '40%',
+            backgroundRepeat: 'no-repeat',
+            display: 'flex',
+            flexDirection: 'column',
+            alignContent: 'center',
+            textAlign: 'center'
             }}
         >
             <h1>Here you can add a new preference</h1>

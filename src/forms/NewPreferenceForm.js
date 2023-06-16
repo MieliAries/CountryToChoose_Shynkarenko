@@ -61,93 +61,113 @@ const NewPreferenceForm = () => {
         border: '1px',
         padding: '5px',
         borderRadius: '4px',
+        width: "20%"
         /* Другие стили */
     };
+    const pStyle = {
+        width: "10%",
+        marginLeft: '5%'
+    }
 
     return (
         <form onSubmit={addAPreference}>
-            <p>Climate(1 for the most cold climate and 9 for the warmest):</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="Climate"
-                value={Climate}
-                onChange={(e) => setClimate(e.target.value)}
-            />
+              <div  style={{
+                  width: "80%",
+                  display: 'flex',
+                  flexDirection: 'row',
+                  marginLeft: '10%'
+              }}><p style={pStyle}>Climate:</p>
+                  <input
+                      style={inputStyle}
+                      type="text"
+                      placeholder="Climate"
+                      value={Climate}
+                      onChange={(e) => setClimate(e.target.value)}
+                  />
 
-            <p>Economics:</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="Economics"
-                value={Economics}
-                onChange={(e) => setEconomics(e.target.value)}
-            />
+                  <p style={pStyle}>Economics:</p>
+                  <input
+                      style={inputStyle}
+                      type="text"
+                      placeholder="Economics"
+                      value={Economics}
+                      onChange={(e) => setEconomics(e.target.value)}
+                  />
 
-            <p>Energy:</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="Energy"
-                value={Energy}
-                onChange={(e) => setEnergy(e.target.value)}
-            />
-
-            <p>Safety:</p>
-            <input
-                style={inputStyle}
-                type="password"
-                placeholder="Safety"
-                value={Safety}
-                onChange={(e) => setSafety(e.target.value)}
-            />
-            <p>LifeCost:</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="LifeCost"
-                value={LifeCost}
-                onChange={(e) => setLifeCost(e.target.value)}
-            />
-            <p>LifeLvl:</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="LifeLvl"
-                value={LifeLvl}
-                onChange={(e) => setLifeLvl(e.target.value)}
-            />
-            <p>Health:</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="Health"
-                value={Health}
-                onChange={(e) => setHealth(e.target.value)}
-            />
-            <p>CrimeRate:</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="CrimeRate"
-                value={CrimeRate}
-                onChange={(e) => setCrimeRate(e.target.value)}
-            />
-            <p>Pollution</p>
-            <input
-                style={inputStyle}
-                type="text"
-                placeholder="Pollution"
-                value={Pollution}
-                onChange={(e) => setPollution(e.target.value)}
-            />
-
+                  <p style={pStyle}>Energy:</p>
+                  <input
+                      style={inputStyle}
+                      type="text"
+                      placeholder="Energy"
+                      value={Energy}
+                      onChange={(e) => setEnergy(e.target.value)}
+                  /></div>
+            <div  style={{
+                marginTop: '2%',
+                width: "80%",
+                display: 'flex',
+                flexDirection: 'row',
+                marginLeft: '10%'
+            }}><p style={pStyle}>Safety:</p>
+                <input
+                    style={inputStyle}
+                    type="text"
+                    placeholder="Safety"
+                    value={Safety}
+                    onChange={(e) => setSafety(e.target.value)}
+                />
+                <p style={pStyle}>LifeCost:</p>
+                <input
+                    style={inputStyle}
+                    type="text"
+                    placeholder="LifeCost"
+                    value={LifeCost}
+                    onChange={(e) => setLifeCost(e.target.value)}
+                />
+                <p style={pStyle}>LifeLvl:</p>
+                <input
+                    style={inputStyle}
+                    type="text"
+                    placeholder="LifeLvl"
+                    value={LifeLvl}
+                    onChange={(e) => setLifeLvl(e.target.value)}
+                /></div>
+            <div style={{
+                marginTop: '2%',
+                width: "80%",
+                display: 'flex',
+                flexDirection: 'row',
+                marginLeft: '10%'
+            }}><p style={pStyle}>Health:</p>
+                <input
+                    style={inputStyle}
+                    type="text"
+                    placeholder="Health"
+                    value={Health}
+                    onChange={(e) => setHealth(e.target.value)}
+                />
+                <p style={pStyle}>CrimeRate:</p>
+                <input
+                    style={inputStyle}
+                    type="text"
+                    placeholder="CrimeRate"
+                    value={CrimeRate}
+                    onChange={(e) => setCrimeRate(e.target.value)}
+                />
+                <p style={pStyle}>Pollution</p>
+                <input
+                    style={inputStyle}
+                    type="text"
+                    placeholder="Pollution"
+                    value={Pollution}
+                    onChange={(e) => setPollution(e.target.value)}
+                /></div>
             <p></p>
             <button type="submit" style={{backgroundColor: 'lightblue',
                 color: 'black',
                 border: 'none',
                 padding: '10px 20px',
-                borderRadius: '4px'}}>Register</button>
+                borderRadius: '4px'}}>Add a preference</button>
         </form>
     );
 };

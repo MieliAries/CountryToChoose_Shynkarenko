@@ -17,7 +17,7 @@ router.post('/addPreference', async (req, res) => {
     try {
         const db = client.db('CountryToChoose');
 
-        // Create a new user
+        // Create a new preference
         const newPreference = {
             Climate,
             Economics,
@@ -30,11 +30,11 @@ router.post('/addPreference', async (req, res) => {
             Pollution
         };
 
-        // Insert the new user into the collection
+        // Insert the new preference into the collection
         const result = await client.db("CountryToChoose").collection("preferences").insertOne(newPreference);
         res.status(201).json({ message: 'Preference added successfully' });
     } catch (error) {
-        console.error('Error registering user:', error);
+        console.error('Error adding a preference:', error);
         res.status(500).json({ message: 'Internal server error' });
     }
 });

@@ -34,7 +34,6 @@ async function listCountries(client){
     if(result) {
         console.log(`Found a country:`);
         console.log(result);
-        return result;
         const jsonResult = JSON.stringify(result, null, 2); // null and 2 for pretty formatting
         fs.writeFile('../src/db/countries_data.json', jsonResult, 'utf8', (err) => {
             if(err){
@@ -50,7 +49,6 @@ async function listPreferences(client){
     if(result) {
         console.log(`Found a preference:`);
         console.log(result);
-        return result;
         const jsonResult = JSON.stringify(result, null, 2); // null and 2 for pretty formatting
         fs.writeFile('../src/db/preferences_data.json', jsonResult, 'utf8', (err) => {
             if(err){

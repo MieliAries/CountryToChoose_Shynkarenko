@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../db/countries_data.json'
+import data from '../db/preferences_data.json'
 
 const PreferenceTable = ({ Countries }) => {
     return (
@@ -15,14 +15,14 @@ const PreferenceTable = ({ Countries }) => {
             </tr>
             </thead>
             <tbody>
-            {data.map((country) => (
-                <tr key={country._id}>
-                    <td>{country.Pollution}/{country.Climate}/{country.Economics}/{country.Energy}/{country.Safety}/{country.LifeCost}/{country.LifeLvl}/{country.Health}/{country.CrimeRate}</td>
-                    <td>{country.Country_Name}</td>
-                    <td>{country.Country_Name}</td>
-                    <td>{country.Country_Name}</td>
-                    <td>{country.Country_Name}</td>
-                    <td>{country.Country_Name}</td>
+            {data.map((preferences) => (
+                <tr key={preferences._id}>
+                    <td>{preferences.Pollution}/{preferences.Climate}/{preferences.Economics}/{preferences.Energy}/{preferences.Safety}/{preferences.LifeCost}/{preferences.LifeLvl}/{preferences.Health}/{preferences.CrimeRate}</td>
+                    <td>{preferences.Country1}</td>
+                    <td>{preferences.Country2}</td>
+                    <td>{preferences.Country3}</td>
+                    <td>{preferences.Country4}</td>
+                    <td>{preferences.Country5}</td>
                 </tr>
             ))}
             </tbody>

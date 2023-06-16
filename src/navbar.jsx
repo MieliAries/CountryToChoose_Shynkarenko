@@ -17,9 +17,6 @@ function Navbar() {
                     <NavLink to='/Preferences'>
                         Your Preferences
                     </NavLink>
-                    <NavLink to='/Login'>
-                        Login
-                    </NavLink>
                     <NavLink to='/Profile'>
                         Profile
                     </NavLink>

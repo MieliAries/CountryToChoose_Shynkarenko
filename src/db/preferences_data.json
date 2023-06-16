@@ -1,0 +1,36 @@
+[
+  {
+    "_id": "648bbcfe4fa0ce15bfab4e1c",
+    "Climate": 9,
+    "Economics": 9,
+    "Energy": 9,
+    "Safety": 9,
+    "LifeCost": 1,
+    "LifeLvl": 9,
+    "Health": 9,
+    "CrimeRate": 1,
+    "Pollution": 1,
+    "Country1": "Норвегія",
+    "Country2": "Данія",
+    "Country3": "Фінляндія",
+    "Country4": "Нова Зеландія",
+    "Country5": "Швеція"
+  },
+  {
+    "_id": "648bbcfe4fa0ce15bfab4e1d",
+    "Climate": 7,
+    "Economics": 7,
+    "Energy": 8,
+    "Safety": 5,
+    "LifeCost": 2,
+    "LifeLvl": 5,
+    "Health": 6,
+    "CrimeRate": 3,
+    "Pollution": 3,
+    "Country1": "Норвегія",
+    "Country2": "Фінляндія",
+    "Country3": "Данія",
+    "Country4": "Швеція",
+    "Country5": "Швейцарія"
+  }
+]
