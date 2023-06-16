@@ -9,6 +9,7 @@ async function SaveCountries(){
     try {
         await client.connect();
         await  listCountries(client);
+        await  listPreferences(client);
     } catch (e) {
         console.error(e);
     } finally {
@@ -36,6 +37,22 @@ async function listCountries(client){
         return result;
         const jsonResult = JSON.stringify(result, null, 2); // null and 2 for pretty formatting
         fs.writeFile('../src/db/countries_data.json', jsonResult, 'utf8', (err) => {
+            if(err){
+                console.error(err);
+            }
+        });
+    }
+};
+
+async function listPreferences(client){
+    const result = await client.db("CountryToChoose").collection("preferences").find().toArray();
+
+    if(result) {
+        console.log(`Found a preference:`);
+        console.log(result);
+        return result;
+        const jsonResult = JSON.stringify(result, null, 2); // null and 2 for pretty formatting
+        fs.writeFile('../src/db/preferences_data.json', jsonResult, 'utf8', (err) => {
             if(err){
                 console.error(err);
             }
